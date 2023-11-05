@@ -3,12 +3,15 @@ package aws.dummy;
 
 import domain.Counter;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController("/counters")
+
+@RestController()
+@RequestMapping("/counters")
 public class counter {
 
     
