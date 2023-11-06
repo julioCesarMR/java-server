@@ -22,9 +22,9 @@ sudo mkdir /usr/share/nginx/html/page2
 sudo mkdir /usr/share/nginx/html/page3
 
 #create index
-echo "<html><body><h1>Page 1 servidor A </h1></body></html>" | sudo tee /usr/share/nginx/html/page1/index.html
-echo "<html><body><h1>Page 2 servidor A </h1></body></html>" | sudo tee /usr/share/nginx/html/page2/index.html
-echo "<html><body><h1>Page 3 servidor A </h1></body></html>" | sudo tee /usr/share/nginx/html/page3/index.html
+echo "<html><body><h1>Page 1 Servidor A - $(hostname -f) </h1></body></html>" | sudo tee /usr/share/nginx/html/page1/index.html
+echo "<html><body><h1>Page 2 Servidor A - $(hostname -f) </h1></body></html>" | sudo tee /usr/share/nginx/html/page2/index.html
+echo "<html><body><h1>Page 3 Servidor A - $(hostname -f) </h1></body></html>" | sudo tee /usr/share/nginx/html/page3/index.html
 
 
 
